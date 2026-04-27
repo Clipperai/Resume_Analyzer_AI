@@ -28,6 +28,8 @@ A smart AI-powered Resume Analyzer that extracts text from resumes (PDF/DOCX) an
 ## TRY IT NOW 
 - Link:- https://resume-ai1.streamlit.app/
 
+---
+
 ## 📦 Installation
 
 ```bash
