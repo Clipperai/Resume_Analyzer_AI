@@ -11,7 +11,6 @@ A smart AI-powered Resume Analyzer that extracts text from resumes (PDF/DOCX) an
   - Resume summary
   - Key skills
   - Improvement suggestions
-- 📜 ChatGPT-like history (session-based)
 - ⚡ Fast Streamlit UI
 
 ---
