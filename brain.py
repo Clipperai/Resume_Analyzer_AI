@@ -10,6 +10,8 @@ SYSTEM_PROMPT = """
 Your goal:
 - Identify high-impact improvements (80/20 rule)
 - Help users get shortlisted by recruiters and ATS systems
+- Strong Key Points
+- ATS Keywords
 
 ---
 
