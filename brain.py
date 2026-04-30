@@ -139,6 +139,7 @@ Help the user:
 - No generic advice → only specific improvements
 - Prioritize high-impact fixes over minor details
 - Assume recruiter spends <10 seconds scanning
+- GIVE ATS SCORE most importantly!!!
 
 ---
 
