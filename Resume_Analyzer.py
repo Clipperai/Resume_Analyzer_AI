@@ -28,6 +28,7 @@ if 'history' not in st.session_state:
 st.title("Resume Analyzer AI")
 
 file = st.file_uploader("Upload a file", type=['pdf', 'docs'])
+select = st.selectbox('Select', ['Frontend Dev', 'Backend Dev', 'Full Stack Dev', 'ML Dev', 'Data Analyst', 'AI Engineer'])
 
 if file:
     with st.spinner('Analyzing...'):
