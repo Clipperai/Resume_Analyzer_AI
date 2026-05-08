@@ -4,6 +4,17 @@ from docx import Document # type: ignore
 from brain import ask_ai
 
 
+
+def ask_ai(prompt):
+
+    full_prompt = f"{SYSTEM_PROMPT}\nUser: {prompt}"
+    response = client.chat.completions.create(
+            model = MODEL,
+            messages = [{"role": "user", "content": prompt}]
+        )
+    return response.choices[0].message.content
+
+
 def extract_text(file):
     if file.type == 'application/pdf':
         pdf = PdfReader(file)
