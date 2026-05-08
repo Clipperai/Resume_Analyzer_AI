@@ -53,10 +53,10 @@ if file:
                 Resume:
                 {resume_text}
                 """
-                    result = ask_ai(resume_text)
-                    st.subheader("Analysis Result")
-                    st.write(result)
-                    st.session_state.history.append({
+             result = ask_ai(resume_text)
+             st.subheader("Analysis Result")
+             st.write(result)
+             st.session_state.history.append({
             "name": file.name,
             "content": result,
 })
