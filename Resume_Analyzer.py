@@ -1,7 +1,10 @@
 import streamlit as st
 from PyPDF2 import PdfReader 
 from docx import Document # type: ignore
-from brain import ask_ai
+from groq import Groq 
+
+client = Groq(api_key = st.secrets["GROQ_API_KEY"])
+
 
 
 
