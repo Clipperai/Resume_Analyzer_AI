@@ -8,8 +8,6 @@ client = Groq(api_key = st.secrets["GROQ_API_KEY"])
 MODEL="openai/gpt-oss-safeguard-20b"
 
 def ask_ai(prompt):
-
-    full_prompt = f"{SYSTEM_PROMPT}\nUser: {prompt}"
     response = client.chat.completions.create(
             model = MODEL,
             messages = [{"role": "user", "content": prompt}]
