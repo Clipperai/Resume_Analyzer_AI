@@ -41,7 +41,7 @@ st.title("Resume Analyzer AI")
 
 file = st.file_uploader("Upload a file", type=['pdf', 'docs'])
 role = st.selectbox('Job Description', ['-Select-', 'Python Dev', 'Frontend Dev', 'Backend Dev', 'Full Stack Dev', 'ML Dev', 'Data Analyst', 'AI Engineer'])
-button = st.button("Submit")
+button = st.button("Analyze")
 
 if file and button:
     with st.spinner('Analyzing...'):
