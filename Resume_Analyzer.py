@@ -52,7 +52,7 @@ if file and button:
         
         else:
              prompt = f"""
-             STRICTLY FOLLOW THIS PROMPT!!!
+             STRICTLY FOLLOW THIS PROMPT
                 Analyze this resume for a {role} role.
                 
                 Give:
@@ -67,6 +67,7 @@ if file and button:
                 Resume:
                 {resume_text}
                 """
+            
              result = ask_ai(resume_text)
              st.subheader("Analysis Result")
              st.write(result)
