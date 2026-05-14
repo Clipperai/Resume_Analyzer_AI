@@ -40,7 +40,7 @@ if 'history' not in st.session_state:
 st.title("Resume Analyzer AI")
 
 file = st.file_uploader("Upload a file", type=['pdf', 'docs'])
-role = st.selectbox('Job Description', ['-Select-', 'Frontend Dev', 'Backend Dev', 'Full Stack Dev', 'ML Dev', 'Data Analyst', 'AI Engineer'])
+role = st.selectbox('Job Description', ['-Select-', 'Python Dev', 'Frontend Dev', 'Backend Dev', 'Full Stack Dev', 'ML Dev', 'Data Analyst', 'AI Engineer'])
 button = st.button("Submit")
 
 if file and button:
@@ -61,7 +61,7 @@ if file and button:
                 3. Strengths
                 4. Missing Skills
                 5. Improvements
-                6. ATS score out of 100
+                6. Final ATS score out of 100
                 7. Required ATS score for this role
                 
                 Resume:
