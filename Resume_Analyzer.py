@@ -10,6 +10,7 @@ MODEL="openai/gpt-oss-safeguard-20b"
 def ask_ai(prompt):
     response = client.chat.completions.create(
             model = MODEL,
+            temperature = 0,
             messages = [{"role": "user", "content": prompt}]
         )
     return response.choices[0].message.content
