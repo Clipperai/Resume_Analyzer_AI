@@ -52,7 +52,7 @@ if file and button:
         
         else:
              prompt = f"""
-             STRICTLY FOLLOW THIS PROMPT
+             STRICTLY FOLLOW THIS PROMPT!!!
                 Analyze this resume for a {role} role.
                 
                 Give:
