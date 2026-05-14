@@ -61,7 +61,7 @@ if file and button:
                 3. Strengths
                 4. Missing Skills
                 5. Improvements
-                6. Final ATS score out of 100
+                6. ATS score out of 100
                 7. Required ATS score for this role
                 
                 Resume:
