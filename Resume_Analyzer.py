@@ -38,13 +38,17 @@ def extract_text(file):
     else:
         return ""
 
-
+# HISTORY
 
 if 'history' not in st.session_state:
     st.session_state.history = []
 
 
+# TITLE
+
 st.title("Resume Analyzer AI")
+
+# FILE UPLOADER n ROLE SELECTOR
 
 file = st.file_uploader("Upload a file", type=['pdf', 'docs'])
 role = st.selectbox('Job Description', ['-select-', 'Python Dev', 'Frontend Dev', 'Backend Dev', 'Full Stack Dev', 'ML Dev', 'Data Analyst', 'AI Engineer'])
@@ -84,6 +88,7 @@ if file and button:
 })
 
 
+# SIDEBAR MENU
 
 st.sidebar.header("Menu")
 
