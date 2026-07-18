@@ -9,6 +9,8 @@ client = Groq(api_key = st.secrets["GROQ_API_KEY"])
 
 MODEL="openai/gpt-oss-safeguard-20b"
 
+# ASK AI  
+
 def ask_ai(prompt):
     response = client.chat.completions.create(
             model = MODEL,
@@ -17,6 +19,8 @@ def ask_ai(prompt):
         )
     return response.choices[0].message.content
 
+
+# DOCS n PDF EXTRACTION 
 
 def extract_text(file):
     if file.type == 'application/pdf':
@@ -42,7 +46,7 @@ if 'history' not in st.session_state:
 st.title("Resume Analyzer AI")
 
 file = st.file_uploader("Upload a file", type=['pdf', 'docs'])
-role = st.selectbox('Job Description', ['-Select-', 'Python Dev', 'Frontend Dev', 'Backend Dev', 'Full Stack Dev', 'ML Dev', 'Data Analyst', 'AI Engineer'])
+role = st.selectbox('Job Description', ['-select-', 'Python Dev', 'Frontend Dev', 'Backend Dev', 'Full Stack Dev', 'ML Dev', 'Data Analyst', 'AI Engineer'])
 button = st.button("Analyze")
 
 if file and button:
