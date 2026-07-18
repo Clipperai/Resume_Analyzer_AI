@@ -8,7 +8,7 @@ MODEL="openai/gpt-oss-safeguard-20b"
 
 # PAGE TITLE n ICON
 
-st.set_page_config(page_tittle= "Resume AI", page_icon= "📜", layout= "centered")
+st.set_page_config(page_title= "Resume AI", page_icon= "📜", layout= "centered")
 
 # ASK AI  
 
