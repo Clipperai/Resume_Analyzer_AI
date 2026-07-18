@@ -3,8 +3,6 @@ from PyPDF2 import PdfReader
 from docx import Document # type: ignore
 from groq import Groq 
 
-st.set_page_config(page_title = 'Resume Analyzer AI')
-
 client = Groq(api_key = st.secrets["GROQ_API_KEY"])
 
 MODEL="openai/gpt-oss-safeguard-20b"
