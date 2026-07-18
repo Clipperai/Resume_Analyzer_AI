@@ -9,6 +9,11 @@ client = Groq(api_key = st.secrets["GROQ_API_KEY"])
 
 MODEL="openai/gpt-oss-safeguard-20b"
 
+
+# PAGE TITLE n ICON
+
+st.set_page_config(page_tittle= "Resume AI", page_icon= "📜", layout= "centered")
+
 # ASK AI  
 
 def ask_ai(prompt):
